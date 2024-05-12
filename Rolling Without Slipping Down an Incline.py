@@ -3,7 +3,7 @@
 
 # In[1]:
 
-
+#simulate the motion
 from vpython import *
 dict={'Ktran':[],'Krot':[],'U':[],'Emech':[],'time':[]}
 #creat
@@ -215,7 +215,7 @@ else:
 
 # In[2]:
 
-
+#process the data
 import pandas as pd
 
 
@@ -278,7 +278,7 @@ pd.Series(time)
 
 # In[10]:
 
-
+#plot the graph
 plt.plot(time,Krot,color='blue',label='Krot-time')
 plt.plot(time,Ktran,color='orange',label='Ktran-time')
 plt.plot(time,U,color='green',label='U-time')
